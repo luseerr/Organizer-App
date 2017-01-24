@@ -20,7 +20,7 @@ function logIn (){
     const pass = document.getElementById('password');
     console.log(user.value);
     console.log(pass.value);
-    if(user.value === 'kochamAlusie' && pass.value === '29112014'){
+    if(user.value === 'admin' && pass.value === 'admin'){
         console.log('test');
     } else {
         alert('Wrong user name or passwod. Try again.');
