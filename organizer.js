@@ -20,11 +20,7 @@ function logIn (){
     const pass = document.getElementById('password');
     console.log(user.value);
     console.log(pass.value);
-    console.log(main.value);
     if(user.value === 'kochamAlusie' && pass.value === '29112014'){
-        main.innerHTML = 'Kocham Cie!!';
-        main.style.color = '#fff';
-        main.style.fontSize = 'xx-large';
         console.log('test');
     } else {
         alert('Wrong user name or passwod. Try again.');
