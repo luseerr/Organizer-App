@@ -1,0 +1,26 @@
+function goToMain(){
+    const lockScr = document.getElementsByClassName('lockScreen')[0];
+    const main = document.getElementsByClassName('main')[0];
+
+    lockScr.style.display = 'none';
+    main.style.visibility = 'visible';
+}
+
+function doSth (event){
+    const x = event.keyCode;
+    if(x === 13){
+        const user = document.getElementById('userName');
+        const pass = document.getElementById('password');
+        console.log(user.value);
+        console.log(pass.value);
+        console.log(main.value);
+        if(user.value === 'kochamAlusie' && pass.value === '29112014'){
+            main.innerHTML = 'Kocham Cie!!';
+            main.style.color = '#fff';
+            main.style.fontSize = 'xx-large';
+            console.log('test');
+        } else {
+            alert('Wrong user name or passwod. Try again.');
+        };
+    };
+};
